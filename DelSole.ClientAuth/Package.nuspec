@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DelSole.ClientAuth</id>
+    <version>1.0.0.0</version>
+    <title>DelSole.AuthService client authenticated requests against Web API</title>
+    <authors>Alessandro Del Sole</authors>
+    <owners>Alessandro Del Sole</owners>
+    <licenseUrl>http://choosealicense.com/licenses/apache-2.0/</licenseUrl>
+    <projectUrl>https://github.com/AlessandroDelSole/DelSoleAuthService</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The DelSole.AuthService library provides client Bearer authentication against Web API with support for authenticated GET, POST, PUT, DELETE requests</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright (C), 2016 Alessandro Del Sole</copyright>
+    <tags>web+api,authentication,client</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+    </dependencies>
+  </metadata>
+  <!-- The convention for analyzers is to put language agnostic dlls in analyzers\dotnet and language specific analyzers in either analyzers\dotnet\cs or analyzers\dotnet\vb -->
+  <files>
+    <!--<file src="*.dll" target="analyzers\dotnet\vb" exclude="**\Microsoft.CodeAnalysis.*;**\System.Collections.Immutable.*;**\System.Reflection.Metadata.*;**\System.Composition.*" />-->
+    <file src="lib\DelSole.ClientAuth.dll" target="lib\portable-net45+netcore45+wpa81"/>
+    <!--<file src="tools\*.ps1" target="tools\" />-->
+  </files>
+</package>
